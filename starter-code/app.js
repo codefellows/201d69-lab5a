@@ -153,7 +153,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   var anyArray = multiply(dynamicArray);
   var valueArray = anyArray[0];
   var totalArray = anyArray[1];
-  console.log(anyArray);
+  //console.log(anyArray);
   var anyStringArray = 'The numbers ' + valueArray + ' have a product of '+ totalArray+ '.';
   return [totalArray, anyStringArray];
 }
