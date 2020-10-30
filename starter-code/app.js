@@ -52,8 +52,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var add = a + b + c;
-  var product = a * b * c;
+  var add = sum(sum(a, b)[0], c)[0];
+  var product = multiply((multiply(a, b)[0]), c)[0];
   var string1 = a + ' and ' + b + ' and ' + c + ' sum to ' + add + '.';
   var string2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product + '.';
   return [add,product,string1,string2];
@@ -105,6 +105,7 @@ function multiplyArray(multArr) { //eslint-disable-line
   var string = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + productArray + '.';
   return [productArray,string];
 }
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
