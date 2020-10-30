@@ -28,10 +28,10 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b, c) { //eslint-disable-line
-  var multiple = a* b * c;
-  var string = 'The product of ' + a + ' and ' + b + ' is ' + multiple +'.';
-  return [multiple, string];
+function multiply(a) { //eslint-disable-line
+  var multiple = a[0] * a[1] * a[2];
+  //var string = 'The product of ' + a + ' and ' + b + ' is ' + multiple +'.';
+  return multiple;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -97,7 +97,7 @@ function sumArray(sumArr) { //eslint-disable-line
 }
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+//testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -113,11 +113,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+var multipleArray = multiply(multArr);
+//console.log(multipleArray);
+var multipleString = 'The numbers ' + multArr[0]+ ','+ multArr[1] + ',' + multArr[2]+ ' have a product of ' + multipleArray+ '.';
+//console.log(multipleString);
+return[multipleArray, multipleString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
