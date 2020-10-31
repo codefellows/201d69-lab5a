@@ -14,7 +14,14 @@ function sum(a, b) { //eslint-disable-line
   return [add, string];
 }
 
+<<<<<<< HEAD
 ///////////sum(); 
+=======
+
+// Here is the test for 
+sum(); 
+
+>>>>>>> 6c5f7659f60de0e9f643901f326916e7b5f7fc0f
 testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
