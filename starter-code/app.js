@@ -58,7 +58,7 @@ function sumAndMultiply(a, b, c) {
   var quesThreeSumForC = sum(quesThreeSum,c)[0];
   var quesThreeTimes = multiply(a,b)[0];
   var quesThreeTimesForC = multiply(quesThreeTimes,c)[0];
-  console.log(quesThreeTimesForC);
+  // console.log(quesThreeTimesForC);
   var sumArray = a + ' and ' + b + ' and ' + c + ' sum to ' + quesThreeSumForC + '.';
   var timesArray = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + quesThreeTimesForC + '.';
   return [quesThreeSumForC, quesThreeTimesForC, sumArray, timesArray];
@@ -82,14 +82,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
+var sumArr = [testArray[0],testArray[1],testArray[2]]; 
+
 
 function sumArray(sumArr) { //eslint-disable-line
+  var quesFourSum = sum(sumArr[0],sumArr[1]);
+  var quesFourAll = sum(quesFourSum[0],sumArr[2]);
+  //console.log(quesFourAll);
+  var quesFourSumAll = testArray + ' was passed in as an array of numbers, and ' + quesFourAll[0] + ' is their sum.'
+  var quesFourArray = [quesFourAll[0], quesFourSumAll];
+  //console.log(quesFourArray);
+  //console.log(quesFourArray);
+  return quesFourArray;
+
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
