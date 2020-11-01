@@ -115,12 +115,24 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+var testArray = [2, 3, 4];
+var multArr = [testArray[0],testArray[1],testArray[2]];
 
+//console.log(multArr)
+
+function multiplyArray(multArr) { //eslint-disable-line
+  var quesFivetimes = multiply(multArr[0],multArr[1]);
+  var quesFiveAll = multiply(quesFivetimes[0],multArr[2]);
+  //console.log(quesFourAll);
+  var quesFiveTimesAll = 'The numbers ' + testArray + ' have a product of ' + quesFiveAll[0] +'.'
+  var quesFiveArray = [quesFiveAll[0], quesFiveTimesAll];
+  //console.log(quesFiveArray);
+  //console.log(quesFiveArray);
+  return quesFiveArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
